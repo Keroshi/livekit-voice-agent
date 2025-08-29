@@ -1,0 +1,2498 @@
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:executing tool
+DEBUG:primp.utils:Loaded CA certs
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_CD=u=wt-wt&m=wt-wt"), name: Indexed(0, 8), value: Indexed(9, 24), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt"), name: Indexed(0, 7), value: Indexed(8, 26), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:rquest.connect:starting new connection: https://www.bing.com/
+DEBUG:rquest.util.client.connect.dns:resolving www.bing.com
+DEBUG:rquest.util.client.connect.http:connecting to 23.196.227.236:443
+DEBUG:rquest.util.client.connect.http:connected to 23.196.227.236:443
+DEBUG:rquest.util.client.pool:pooling idle connection for PoolKey { uri: https://www.bing.com/, alpn_protos: None, network: default }
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'MUID'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("MUIDB=2304976B3A89680328B5813F3B44694F; expires=Sun, 20-Sep-2026 21:56:12 GMT; path=/; HttpOnly"), name: Indexed(0, 5), value: Indexed(6, 38), expires: Some(DateTime(2026-09-20 21:56:12.0 +00:00:00)), max_age: None, domain: None, path: Some(Indexed(84, 85)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt&F=1&SID=01BE56EB7DC56BD03AE440BF7C086A9B; domain=.bing.com; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 67), expires: None, max_age: None, domain: Some(Indexed(76, 85)), path: Some(Indexed(92, 93)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_V=1; domain=.bing.com; expires=Sun, 20-Sep-2026 21:56:12 GMT; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2026-09-20 21:56:12.0 +00:00:00)), max_age: None, domain: Some(Indexed(18, 27)), path: Some(Indexed(73, 74)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHD=AF=NOFORM; domain=.bing.com; expires=Thu, 26-Aug-2027 21:56:12 GMT; path=/"), name: Indexed(0, 5), value: Indexed(6, 15), expires: Some(DateTime(2027-08-26 21:56:12.0 +00:00:00)), max_age: None, domain: Some(Indexed(24, 33)), path: Some(Indexed(79, 80)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUID=V=2&GUID=3AE5D937EC754A9AA1F0B7DB9224C615&dmnchg=1; domain=.bing.com; expires=Thu, 26-Aug-2027 21:56:12 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 58), expires: Some(DateTime(2027-08-26 21:56:12.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUSR=DOB=20250826; domain=.bing.com; expires=Thu, 26-Aug-2027 21:56:12 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 20), expires: Some(DateTime(2027-08-26 21:56:12.0 +00:00:00)), max_age: None, domain: Some(Indexed(29, 38)), path: Some(Indexed(84, 85)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHHPGUSR=SRCHLANG=en&IG=5FFDF2813C9E419A80FEC19485647CB2; domain=.bing.com; expires=Thu, 26-Aug-2027 21:56:12 GMT; path=/"), name: Indexed(0, 10), value: Indexed(11, 58), expires: Some(DateTime(2027-08-26 21:56:12.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_SS=SID=01BE56EB7DC56BD03AE440BF7C086A9B; domain=.bing.com; path=/"), name: Indexed(0, 3), value: Indexed(4, 40), expires: None, max_age: None, domain: Some(Indexed(49, 58)), path: Some(Indexed(65, 66)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("ak_bmsc=EC9B6145EC95FE8ECFC6503CFB2EC85B~000000000000000000000000000000~YAAQzA0uF8FkSOOYAQAAha9h6BwxCtteaQoflE/bBwJ3FE6M4ZgO7OSXRRYmc3YpK1H5Z8e4uv0tRMsXQ0/ftQgY+UDmw+ySbWtCHh+YKPSbIWFDfEcnn5f+XwNk+H0NKwGPMdZ9HQYKb2DsS0OdVATNOg6nbQvZRTuEixrIszkj/xY1+YWSXes6D7uM9FNwBJ9XtBfvoEkgvCyxrnxfBgExXBGD130RZfTVezX/QaPha79ChNXThPtyWT8bcAHFtttFEtVDaJCOY0vF9v1V71r9PwR9gc+SJtJIYQ7ozHMoGbvH8PIjyuUt02pmp8c+xSEHE29d3VOx1xf8YQMtUox0J2kyXZDJUlXXTZo5YGxIR8V2l4+zUPbmLfjdHgilOcgdyhqqWC3BqJ4=; Domain=.bing.com; Path=/; Expires=Tue, 26 Aug 2025 23:56:12 GMT; Max-Age=7200"), name: Indexed(0, 7), value: Indexed(8, 472), expires: Some(DateTime(2025-08-26 23:56:12.0 +00:00:00)), max_age: Some(Duration { seconds: 7200, nanoseconds: 0 }), domain: Some(Indexed(481, 490)), path: Some(Indexed(497, 498)), secure: None, http_only: None, same_site: None, partitioned: None }'
+INFO:primp:response: https://www.bing.com/search?q=latest+Iron+Man&filters=ex1%3A%22ez5_19961_20326%22 200
+DEBUG:duckduckgo_search.DDGS:_get_url() https://www.bing.com/search?q=latest+Iron+Man&filters=ex1%3A%22ez5_19961_20326%22 200
+INFO:root:Search results for 'latest Iron Man': Jul 23, 2014 · \u6309\u6211\u4e2a\u4eba\u7684\u7406\u89e3\uff0clatest \u8fd9\u4e2a\u8bcd\u5f3a\u8c03\u7684\u662f\u65f6\u95f4\u5e8f\u5217\u4e0a\u6700\u9760\u8fd1\u73b0\u5728\uff0c\u800c newest \u5f3a\u8c03\u7684\u662f\u65b0\u65e7\u7684\u95ee\u9898\u3002\u6bd4\u5982\u8bf4\uff0c\u82f9\u679c\u7684 newest \u4ea7\u54c1\uff0c\u6beb\u65e0\u7591\u95ee\u662f Mac Pro\uff0c\u8fd9\u662f\u53bb\u5e74\u624d\u51fa\u73b0\u7684\u4e1c\u897f\uff0c\u4ee5\u524d\u662f\u6ca1\u6709\u7684\u3002\u800c\u82f9\u679c\u7684 latest \u4ea7\u54c1\uff0c\u5e94\u8be5\u662f iPhone 6 \u4e86\u5427\u3002 \u521a\u624d\u6211\u641c\u7d22\u4e86\u4e00\u4e0b\uff0c\u5927\u81f4\u5370\u8bc1\u4e86\u8fd9\u4e2a\u770b\u6cd5\u3002\u4e24\u4e2a\u8bcd\u4e4b\u95f4\u6ca1\u6709\u592a\u5927\u7684\u533a\u522b ... \u77e5\u4e4e\uff0c\u4e2d\u6587\u4e92\u8054\u7f51\u9ad8\u8d28\u91cf\u7684\u95ee\u7b54\u793e\u533a\u548c\u521b\u4f5c\u8005\u805a\u96c6\u7684\u539f\u521b\u5185\u5bb9\u5e73\u53f0\uff0c\u4e8e 2011 \u5e74 1 \u6708\u6b63\u5f0f\u4e0a\u7ebf\uff0c\u4ee5\u300c\u8ba9\u4eba\u4eec\u66f4\u597d\u7684\u5206\u4eab\u77e5\u8bc6\u3001\u7ecf\u9a8c\u548c\u89c1\u89e3\uff0c\u627e\u5230\u81ea\u5df1\u7684\u89e3\u7b54\u300d\u4e3a\u54c1\u724c\u4f7f\u547d\u3002\u77e5\u4e4e\u51ed\u501f\u8ba4\u771f\u3001\u4e13\u4e1a\u3001\u53cb\u5584\u7684\u793e\u533a\u6c1b\u56f4\u3001\u72ec\u7279\u7684\u4ea7\u54c1\u673a\u5236\u4ee5\u53ca\u7ed3\u6784\u5316\u548c\u6613\u83b7\u5f97\u7684\u4f18\u8d28\u5185\u5bb9\uff0c\u805a\u96c6\u4e86\u4e2d\u6587\u4e92\u8054\u7f51\u79d1\u6280\u3001\u5546\u4e1a\u3001\u5f71\u89c6 ... Latest news and updates on the People’s Liberation Army Navy, including military drills, the development of warships and aircraft carriers, spending, reforms and modernisation. The latest news on IT, tech and telecoms, including computer science, cyber security, hacking and cyber protection. Also covers the Internet of Things, artificial intelligence (AI), social media ... All the latest news, opinions and analysis on Hong Kong, China, Asia and around the world
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:watchfiles.main:process already dead, exit code: 1
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+WARNING:livekit.agents:Running <Task finished name='Task-198' coro=<_execute_tools_task.<locals>._traceable_fnc_tool() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 4.42 seconds
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 34, in entrypoint
+    async for message in session:
+TypeError: 'async for' requires an object with __aiter__ method, got AgentSession
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+WARNING:watchfiles.main:process already dead, exit code: 1
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 45, in entrypoint
+    async for message in session:
+TypeError: 'async for' requires an object with __aiter__ method, got AgentSession
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 36, in entrypoint
+    @session.on_message
+     ^^^^^^^^^^^^^^^^^^
+AttributeError: 'AgentSession' object has no attribute 'on_message'
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 50, in entrypoint
+    last_msg = session.conversation[-1]
+               ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AgentSession' object has no attribute 'conversation'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+WARNING:watchfiles.main:process already dead, exit code: 1
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+WARNING:livekit.agents:Running <Task finished name='Task-38' coro=<AgentSession._update_activity() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_session.py:806> result=None> took too long: 2.62 seconds
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:stream closed
+ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:received user transcript
+INFO:root:USER(None): \u0e43\u0e19 \u0e23\u0e39\u0e1b <noise> (lang=None, final=False)
+INFO:root:USER(None): \u0e43\u0e19 \u0e23\u0e39\u0e1b <noise> (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +24°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+ERROR:livekit.plugins.google:Gemini Realtime API error: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+ERROR:livekit.agents:AgentSession is closing due to unrecoverable error
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+ERROR:livekit.plugins.google:Error in _main_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 641, in _main_task
+    raise APIConnectionError(message="Failed to connect to Gemini Live") from e
+livekit.agents._exceptions.APIConnectionError: Failed to connect to Gemini Live (body=None, retryable=True)
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+ERROR:livekit.plugins.google:Gemini Realtime API error: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+ERROR:livekit.agents:AgentSession is closing due to unrecoverable error
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+ERROR:livekit.plugins.google:Error in _main_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 641, in _main_task
+    raise APIConnectionError(message="Failed to connect to Gemini Live") from e
+livekit.agents._exceptions.APIConnectionError: Failed to connect to Gemini Live (body=None, retryable=True)
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): What is the level? (lang=None, final=False)
+INFO:root:USER(None): What is the level? (lang=None, final=True)
+INFO:root:USER(None): Nairobi (lang=None, final=False)
+INFO:root:USER(None): Nairobi (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+WARNING:livekit.agents:Running <Task finished name='Task-88' coro=<_execute_tools_task.<locals>._traceable_fnc_tool() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 2.08 seconds
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:server cancelled tool calls
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): What is the weather? (lang=None, final=False)
+INFO:root:USER(None): What is the weather? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+ERROR:livekit:failed to emit event conversation_item_added
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 58, in emit
+    callback(*callback_args)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 46, in on_agent_output_generated
+    print(f"AGENT: {event.output}")
+                    ^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\pydantic\main.py", line 991, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ConversationItemAddedEvent' object has no attribute 'output'
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): What (lang=None, final=False)
+INFO:root:USER(None): What is the weather in Nairobi? (lang=None, final=False)
+INFO:root:USER(None): What is the weather in Nairobi? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+WARNING:livekit.agents:Running <Task finished name='Task-73' coro=<_execute_tools_task.<locals>._traceable_fnc_tool() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 2.20 seconds
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): <noise> (lang=None, final=False)
+INFO:root:USER(None): <noise> (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): What is the weather? (lang=None, final=False)
+INFO:root:USER(None): What is the weather? (lang=None, final=True)
+INFO:root:USER(None): Nairobi. (lang=None, final=False)
+INFO:root:USER(None): Nairobi. (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+WARNING:livekit.agents:Running <Task finished name='Task-87' coro=<_execute_tools_task.<locals>._traceable_fnc_tool() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 2.64 seconds
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:server cancelled tool calls
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): What is the one? (lang=None, final=False)
+INFO:root:USER(None): What is the one? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:root:USER(None): What is the. (lang=None, final=False)
+INFO:root:USER(None): What is the. (lang=None, final=True)
+INFO:root:USER(None): Nairobi. (lang=None, final=False)
+INFO:root:USER(None): Nairobi. (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+INFO:root:USER(None): What (lang=None, final=False)
+INFO:root:USER(None): What is (lang=None, final=False)
+INFO:root:USER(None): What is the (lang=None, final=False)
+INFO:root:USER(None): What is the la (lang=None, final=False)
+INFO:root:USER(None): What is the latest (lang=None, final=False)
+INFO:root:USER(None): What is the latest Iron Man movie? (lang=None, final=False)
+INFO:root:USER(None): What is the latest Iron Man movie? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+DEBUG:primp.utils:Loaded CA certs
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_CD=u=wt-wt&m=wt-wt"), name: Indexed(0, 8), value: Indexed(9, 24), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt"), name: Indexed(0, 7), value: Indexed(8, 26), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:rquest.connect:starting new connection: https://www.bing.com/
+DEBUG:rquest.util.client.connect.dns:resolving www.bing.com
+DEBUG:rquest.util.client.connect.http:connecting to 23.196.227.236:443
+DEBUG:rquest.util.client.connect.http:connected to 23.196.227.236:443
+DEBUG:rquest.util.client.pool:pooling idle connection for PoolKey { uri: https://www.bing.com/, alpn_protos: None, network: default }
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'MUID'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("MUIDB=1925A6F78C7A61331E38B0A28DCE6089; expires=Mon, 21-Sep-2026 21:22:33 GMT; path=/; HttpOnly"), name: Indexed(0, 5), value: Indexed(6, 38), expires: Some(DateTime(2026-09-21 21:22:33.0 +00:00:00)), max_age: None, domain: None, path: Some(Indexed(84, 85)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt&F=1&SID=35683B4D5E8963830EA32D185F3D629A; domain=.bing.com; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 67), expires: None, max_age: None, domain: Some(Indexed(76, 85)), path: Some(Indexed(92, 93)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_V=1; domain=.bing.com; expires=Mon, 21-Sep-2026 21:22:33 GMT; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2026-09-21 21:22:33.0 +00:00:00)), max_age: None, domain: Some(Indexed(18, 27)), path: Some(Indexed(73, 74)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:33 GMT; path=/"), name: Indexed(0, 5), value: Indexed(6, 15), expires: Some(DateTime(2027-08-27 21:22:33.0 +00:00:00)), max_age: None, domain: Some(Indexed(24, 33)), path: Some(Indexed(79, 80)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUID=V=2&GUID=B5AB7C6D2AC94C38A37FDE1D724DD9EB&dmnchg=1; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:33 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 58), expires: Some(DateTime(2027-08-27 21:22:33.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUSR=DOB=20250827; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:33 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 20), expires: Some(DateTime(2027-08-27 21:22:33.0 +00:00:00)), max_age: None, domain: Some(Indexed(29, 38)), path: Some(Indexed(84, 85)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHHPGUSR=SRCHLANG=en&IG=9E2AA5705F134E389008AD6C9D4E2D66; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:33 GMT; path=/"), name: Indexed(0, 10), value: Indexed(11, 58), expires: Some(DateTime(2027-08-27 21:22:33.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_SS=SID=35683B4D5E8963830EA32D185F3D629A; domain=.bing.com; path=/"), name: Indexed(0, 3), value: Indexed(4, 40), expires: None, max_age: None, domain: Some(Indexed(49, 58)), path: Some(Indexed(65, 66)), secure: None, http_only: None, same_site: None, partitioned: None }'
+INFO:primp:response: https://www.bing.com/search?q=latest+Iron+Man+movie&filters=ex1%3A%22ez5_19962_20327%22 200
+DEBUG:duckduckgo_search.DDGS:_get_url() https://www.bing.com/search?q=latest+Iron+Man+movie&filters=ex1%3A%22ez5_19962_20327%22 200
+INFO:root:Search results for 'latest Iron Man movie': Apr 18, 2025 · Iron Man's absence in the MCU has been sorely felt ever since Tony Stark gave his life to save the world in Endgame, but a new … Jul 25, 2025 · Explore Marvel movies & the Marvel Cinematic Universe (MCU) on the official site of Marvel Entertainment! 4 days ago · We rank the best Iron Man movies & explain why they work so well. We look at both his solo movies and his appearances in other … May 22, 2025 · We break down everything we know about every Marvel movie and TV show currently in the works. Jun 21, 2025 · Iron Man 4 does not yet have an official release date, and Marvel Studios has not yet confirmed its production. Many fans were …
+DEBUG:livekit.agents:tools execution completed
+INFO:root:USER(None): What is charge between? (lang=None, final=False)
+INFO:root:USER(None): What is charge between? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+DEBUG:primp.utils:Loaded CA certs
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_CD=u=wt-wt&m=wt-wt"), name: Indexed(0, 8), value: Indexed(9, 24), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt"), name: Indexed(0, 7), value: Indexed(8, 26), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:rquest.connect:starting new connection: https://www.bing.com/
+DEBUG:rquest.util.client.connect.dns:resolving www.bing.com
+DEBUG:rquest.util.client.connect.http:connecting to 23.196.227.236:443
+DEBUG:rquest.util.client.connect.http:connected to 23.196.227.236:443
+DEBUG:rquest.util.client.pool:pooling idle connection for PoolKey { uri: https://www.bing.com/, alpn_protos: None, network: default }
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'MUID'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("MUIDB=268F5EA811A2645A1B7E48FD100F652E; expires=Mon, 21-Sep-2026 21:22:50 GMT; path=/; HttpOnly"), name: Indexed(0, 5), value: Indexed(6, 38), expires: Some(DateTime(2026-09-21 21:22:50.0 +00:00:00)), max_age: None, domain: None, path: Some(Indexed(84, 85)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt&F=1&SID=27EC01B9C6E268660D0F17ECC74F690C; domain=.bing.com; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 67), expires: None, max_age: None, domain: Some(Indexed(76, 85)), path: Some(Indexed(92, 93)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_V=1; domain=.bing.com; expires=Mon, 21-Sep-2026 21:22:50 GMT; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2026-09-21 21:22:50.0 +00:00:00)), max_age: None, domain: Some(Indexed(18, 27)), path: Some(Indexed(73, 74)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:50 GMT; path=/"), name: Indexed(0, 5), value: Indexed(6, 15), expires: Some(DateTime(2027-08-27 21:22:50.0 +00:00:00)), max_age: None, domain: Some(Indexed(24, 33)), path: Some(Indexed(79, 80)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUID=V=2&GUID=D9404530BF1042E9B066FAF4E0617E35&dmnchg=1; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:50 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 58), expires: Some(DateTime(2027-08-27 21:22:50.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUSR=DOB=20250827; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:50 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 20), expires: Some(DateTime(2027-08-27 21:22:50.0 +00:00:00)), max_age: None, domain: Some(Indexed(29, 38)), path: Some(Indexed(84, 85)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHHPGUSR=SRCHLANG=en&IG=36FC4619C68A40FFB23B2530AA76BE03; domain=.bing.com; expires=Fri, 27-Aug-2027 21:22:50 GMT; path=/"), name: Indexed(0, 10), value: Indexed(11, 58), expires: Some(DateTime(2027-08-27 21:22:50.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_SS=SID=27EC01B9C6E268660D0F17ECC74F690C; domain=.bing.com; path=/"), name: Indexed(0, 3), value: Indexed(4, 40), expires: None, max_age: None, domain: Some(Indexed(49, 58)), path: Some(Indexed(65, 66)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("ak_bmsc=C908424FCF398FD5E6CF5B0993A94A46~000000000000000000000000000000~YAAQzA0uF6jM/uOYAQAAtn1p7RyUBq6kX+rMQI205McAYZ/9I3F6PDvg9HJ6iB3LaKyk+5ov80JGOLEmOQq9Llf8V+ZZ02NgIBrt0/IP1yb1/TZFESFMeDcPUDuI+cVQBWc4ymq/Dk2kZe7LYI3o8N5oZVQS6bYFJZhp2HO8QZ1CWW4TJ2MPUxB8PLQSmuSWFcGLJCGzMq+s/h73gy8C9QMiHpFRHuuhYeUh31k6syiHoUZ6/YV0uO2qVsB29j2JFft/T9azUp8bBHOrJfflAEFHVy5kOJCssEFACG5nOGfL3OUvpL/hME07N6AfMG3Yq6Gp+GWZ2luggT/UMy2MKa1Y+z5cT2ik0hL2HJ8JRB/tr4cIy4BJlEoH+KiVJduOxOnTpyCPbLTirA==; Domain=.bing.com; Path=/; Expires=Wed, 27 Aug 2025 23:22:50 GMT; Max-Age=7200"), name: Indexed(0, 7), value: Indexed(8, 472), expires: Some(DateTime(2025-08-27 23:22:50.0 +00:00:00)), max_age: Some(Duration { seconds: 7200, nanoseconds: 0 }), domain: Some(Indexed(481, 490)), path: Some(Indexed(497, 498)), secure: None, http_only: None, same_site: None, partitioned: None }'
+INFO:primp:response: https://www.bing.com/search?q=ChatGPT&filters=ex1%3A%22ez5_19962_20327%22 200
+DEBUG:duckduckgo_search.DDGS:_get_url() https://www.bing.com/search?q=ChatGPT&filters=ex1%3A%22ez5_19962_20327%22 200
+INFO:root:Search results for 'ChatGPT': ChatGPT search connects people with original, high-quality content from the web and makes it part of their conversation. … Here's a ChatGPT guide to help understand Open AI's viral text-generating system. We outline the most recent updates and … ChatGPT is a chatbot that you can learn how to use in minutes. Here are some easy ways to get started. ChatGPT, short for Generative Pre-trained Transformer, is a conversational AI chatbot capable of understanding and generating … ChatGPT Is Everywhere, But What Can It Do and How Does It Work? We break down the basics of OpenAI's chatbot and explain …
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:server cancelled tool calls
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): Thank you. (lang=None, final=False)
+INFO:root:USER(None): Thank you. (lang=None, final=True)
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): What (lang=None, final=False)
+INFO:root:USER(None): What is (lang=None, final=False)
+INFO:root:USER(None): What is the (lang=None, final=False)
+INFO:root:USER(None): What is the wea (lang=None, final=False)
+INFO:root:USER(None): What is the weather (lang=None, final=False)
+INFO:root:USER(None): What is the weather? (lang=None, final=False)
+INFO:root:USER(None): What is the weather? (lang=None, final=True)
+INFO:root:USER(None): Nairobi. (lang=None, final=False)
+INFO:root:USER(None): Nairobi. (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:server cancelled tool calls
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): What is the weather? (lang=None, final=False)
+INFO:root:USER(None): What is the weather? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+INFO:root:USER(None): What is judgment? (lang=None, final=False)
+INFO:root:USER(None): What is judgment? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+DEBUG:primp.utils:Loaded CA certs
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_CD=u=wt-wt&m=wt-wt"), name: Indexed(0, 8), value: Indexed(9, 24), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt"), name: Indexed(0, 7), value: Indexed(8, 26), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:rquest.connect:starting new connection: https://www.bing.com/
+DEBUG:rquest.util.client.connect.dns:resolving www.bing.com
+DEBUG:rquest.util.client.connect.http:connecting to 2.16.241.201:443
+DEBUG:rquest.util.client.connect.http:connected to 2.16.241.201:443
+DEBUG:rquest.util.client.pool:pooling idle connection for PoolKey { uri: https://www.bing.com/, alpn_protos: None, network: default }
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'MUID'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("MUIDB=2132D543C8AF6564151DC316C90B647B; expires=Mon, 21-Sep-2026 21:25:09 GMT; path=/; HttpOnly"), name: Indexed(0, 5), value: Indexed(6, 38), expires: Some(DateTime(2026-09-21 21:25:09.0 +00:00:00)), max_age: None, domain: None, path: Some(Indexed(84, 85)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt&F=1&SID=163799FFB56B635013418FAAB4CF6214; domain=.bing.com; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 67), expires: None, max_age: None, domain: Some(Indexed(76, 85)), path: Some(Indexed(92, 93)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_V=1; domain=.bing.com; expires=Mon, 21-Sep-2026 21:25:09 GMT; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2026-09-21 21:25:09.0 +00:00:00)), max_age: None, domain: Some(Indexed(18, 27)), path: Some(Indexed(73, 74)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'SRCHD'
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'SRCHUID'
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'SRCHUSR'
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'SRCHHPGUSR'
+DEBUG:cookie_store.cookie_store:inserting secure cookie '_SS'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("ak_bmsc=1E82D56A9FECC7983A64D76AD99983A9~000000000000000000000000000000~YAAQmvAQAnDeT+SYAQAAJ5tr7RxXh2SIsYXPrRPrC2UtihyUAln4JEiifWjzDcAUObn+uTd4c7+RD3oTW1SyrPruBz6uW3Ykd1/OsF1vzhwWawWQmjE35l6vJtUGC0QjFDS5A/7Ri6IrLZSpCQmPJjK5ZSg/wRqPkX6FJHbx0wp9bewQQhZlGUAxB4qB4TsJzGCY5EEinKMiM0hzCrKUduvk2J6V32dRnIkNYFLYDFRvryyUyG1tLL6mjP+7g1lpr58qJDYU4G3sS0F95efcdLZv1/yEsXNH2I3Ya6qeVJMozmLltxYyrW9hGkuCwCj+XUAbkDzsCWGs9QqMK7g+A87ZCvWneTLNm48n8K8SLadYZuu2SW9R99T4cjrW/b8uaO9W41MGXQwzhRw=; Domain=.bing.com; Path=/; Expires=Wed, 27 Aug 2025 23:25:08 GMT; Max-Age=7199"), name: Indexed(0, 7), value: Indexed(8, 472), expires: Some(DateTime(2025-08-27 23:25:08.0 +00:00:00)), max_age: Some(Duration { seconds: 7199, nanoseconds: 0 }), domain: Some(Indexed(481, 490)), path: Some(Indexed(497, 498)), secure: None, http_only: None, same_site: None, partitioned: None }'
+INFO:primp:response: https://www.bing.com/search?q=ChatGPT&filters=ex1%3A%22ez5_19962_20327%22 200
+DEBUG:duckduckgo_search.DDGS:_get_url() https://www.bing.com/search?q=ChatGPT&filters=ex1%3A%22ez5_19962_20327%22 200
+INFO:root:Search results for 'ChatGPT': Jul 26, 2025 · ChatGPT \u56fd\u5185\u4f7f\u7528\u4fdd\u59c6\u6559\u7a0b\u4ee5\u53ca\u65e0\u9650\u5236\u4f7f\u7528 ChatGPT 4.0 \u7684\u65b9\u6cd5\uff08\u652f\u6301 GPT-4\u3001GPT-4o\u3001GPT-o1\uff09 \u66f4\u65b0\u65f6\u95f4: 2025-07-26 \u672c\u6587\u8be6\u7ec6\u63cf\u8ff0\u4e86\u4e2d\u6587\u7248 ChatGPT \u7684\u4f7f\u7528\u65b9\u6cd5\uff0c\u901a\u8fc7\u63a8\u8350\u53ef … 3 days ago · \u672c\u6587\u63d0\u4f9b ChatGPT \u4e2d\u6587\u7248 \u4f7f\u7528\u6307\u5357\uff0c\u63a8\u8350 \u56fd\u5185\u76f4\u8fde \u7684 ChatGPT \u955c\u50cf\u7f51\u7ad9\uff0c \u652f\u6301GPT-4\uff0c\u65e0\u9700\u7ffb\u5899\u3002 \u672c\u9879\u76ee\u4e3a\u7528\u6237\u63d0\u4f9b\u5168\u9762\u7684 ChatGPT \u4e2d\u6587\u7248 \u4f7f\u7528\u6307\u5357\uff0c\u540c\u65f6\u6574\u7406\u4e86\u56fd\u5185\u53ef\u7528\u7684 … Jul 26, 2025 · \u56fd\u5185\u5982\u4f55\u4f7f\u7528 ChatGPT\uff1f\u6700\u5bb9\u6613\u61c2\u7684 ChatGPT \u4ecb\u7ecd\u4e0e\u6559\u5b66\u6307\u5357\u30102025\u5e747\u6708\u66f4\u65b0\u3011. Contribute to chatgpt-zh/chinese-chatgpt-guide development by creating an account on GitHub. 3 days ago · chatgpt-chinese-gpt / chatgpt-mirrors Public Notifications You must be signed in to change notification settings Fork 1 Star 8 main Jul 26, 2025 · ChatGPT\u5b98\u7f51 | ChatGPT\u4e2d\u6587\u7248 \u6700\u65b0\u4f7f\u7528\u6307\u5357\u30102025\u5e747\u6708\u3011. Contribute to chatgpt-zh/chatgpt-china-guide development by creating an account on GitHub.
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+WARNING:livekit.plugins.google:server cancelled tool calls
+INFO:root:USER(None): Of course, sir. (lang=None, final=False)
+INFO:root:USER(None): Of course, sir. (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+DEBUG:primp.utils:Loaded CA certs
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_CD=u=wt-wt&m=wt-wt"), name: Indexed(0, 8), value: Indexed(9, 24), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt"), name: Indexed(0, 7), value: Indexed(8, 26), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:rquest.connect:starting new connection: https://www.bing.com/
+DEBUG:rquest.util.client.connect.dns:resolving www.bing.com
+DEBUG:rquest.util.client.connect.http:connecting to 23.196.227.236:443
+DEBUG:rquest.util.client.connect.http:connected to 23.196.227.236:443
+DEBUG:rquest.util.client.pool:pooling idle connection for PoolKey { uri: https://www.bing.com/, alpn_protos: None, network: default }
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'MUID'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("MUIDB=3C4E511C17D166C3208F4749160167E1; expires=Mon, 21-Sep-2026 21:26:19 GMT; path=/; HttpOnly"), name: Indexed(0, 5), value: Indexed(6, 38), expires: Some(DateTime(2026-09-21 21:26:19.0 +00:00:00)), max_age: None, domain: None, path: Some(Indexed(84, 85)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt&F=1&SID=196591B0DDC46AFE202E87E5DC146B77; domain=.bing.com; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 67), expires: None, max_age: None, domain: Some(Indexed(76, 85)), path: Some(Indexed(92, 93)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_V=1; domain=.bing.com; expires=Mon, 21-Sep-2026 21:26:19 GMT; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2026-09-21 21:26:19.0 +00:00:00)), max_age: None, domain: Some(Indexed(18, 27)), path: Some(Indexed(73, 74)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 27-Aug-2027 21:26:19 GMT; path=/"), name: Indexed(0, 5), value: Indexed(6, 15), expires: Some(DateTime(2027-08-27 21:26:19.0 +00:00:00)), max_age: None, domain: Some(Indexed(24, 33)), path: Some(Indexed(79, 80)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUID=V=2&GUID=F91CA6FD1885443D8D35DA6EE30209D7&dmnchg=1; domain=.bing.com; expires=Fri, 27-Aug-2027 21:26:19 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 58), expires: Some(DateTime(2027-08-27 21:26:19.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUSR=DOB=20250827; domain=.bing.com; expires=Fri, 27-Aug-2027 21:26:19 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 20), expires: Some(DateTime(2027-08-27 21:26:19.0 +00:00:00)), max_age: None, domain: Some(Indexed(29, 38)), path: Some(Indexed(84, 85)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHHPGUSR=SRCHLANG=en&IG=FE227484702649B2B37E3E86F0553DD3; domain=.bing.com; expires=Fri, 27-Aug-2027 21:26:19 GMT; path=/"), name: Indexed(0, 10), value: Indexed(11, 58), expires: Some(DateTime(2027-08-27 21:26:19.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_SS=SID=196591B0DDC46AFE202E87E5DC146B77; domain=.bing.com; path=/"), name: Indexed(0, 3), value: Indexed(4, 40), expires: None, max_age: None, domain: Some(Indexed(49, 58)), path: Some(Indexed(65, 66)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("ak_bmsc=17B8FF495A12796F32572A72EC7B0441~000000000000000000000000000000~YAAQzA0uF98Q/+OYAQAA965s7RzFTbqdtK37KLAbrN1xAFHAYBm8+gdhcgn+i5RYyBoRqF6GF9cj56ISbcIoUCfeMcMmrdMgEkpi++11s+Xu+3+0c8v0WYQ6PVaM6jbDXI0kGZexxIl+Oi0DSEbihIrapJS2szoaAL/IDjicn24L1Pncnk+6L+tCJL/PysFrkE1NYAUwqfDmG4nRzHEkGVjw6D/K+EG+1IUVboZ/3fMpMi119QIuIAfdXaGMr/SVNsCgLpCoeUXrmJLoCrk2vXHeL/IfkzlzPrEMrlCguSXPo4/oMqFFodK4B0fwoxJkvm54rf03rmrpm1GbtBhbKb0IZZcfew5WIshnGYxQrZHFRoMEK/SMZ7H9BH+gi54UBAEpZCsRGnnpWkU=; Domain=.bing.com; Path=/; Expires=Wed, 27 Aug 2025 23:26:19 GMT; Max-Age=7200"), name: Indexed(0, 7), value: Indexed(8, 472), expires: Some(DateTime(2025-08-27 23:26:19.0 +00:00:00)), max_age: Some(Duration { seconds: 7200, nanoseconds: 0 }), domain: Some(Indexed(481, 490)), path: Some(Indexed(497, 498)), secure: None, http_only: None, same_site: None, partitioned: None }'
+INFO:primp:response: https://www.bing.com/search?q=ChatGPT&filters=ex1%3A%22ez5_19962_20327%22 200
+DEBUG:duckduckgo_search.DDGS:_get_url() https://www.bing.com/search?q=ChatGPT&filters=ex1%3A%22ez5_19962_20327%22 200
+INFO:root:Search results for 'ChatGPT': ChatGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try. Just ask and … Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it … 5 days ago · With ChatGPT in your pocket, you’ll find: · Image generation–Generate original images from a description, or … ChatGPT is a generative artificial intelligence chatbot developed by OpenAI and released on November 30, 2022. It … 3 days ago · ChatGPT is a chatbot that you can learn how to use in minutes. Here are some easy ways to get started.
+DEBUG:livekit.agents:tools execution completed
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+INFO:root:USER(None): ro (lang=None, final=False)
+INFO:root:USER(None): roger (lang=None, final=False)
+INFO:root:USER(None): roger bos (lang=None, final=False)
+INFO:root:USER(None): roger boss (lang=None, final=False)
+INFO:root:USER(None): roger boss. I (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will sear (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for a de (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for a definition (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for a definition of (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for a definition of cha (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for a definition of chat (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for a definition of chat GPT. (lang=None, final=False)
+INFO:root:USER(None): roger boss. I will search the web for a definition of chat GPT. (lang=None, final=True)
+INFO:root:USER(None): No, thank you. (lang=None, final=False)
+INFO:root:USER(None): No, thank you. (lang=None, final=True)
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:shutting down worker
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): Hi, how are you? (lang=None, final=False)
+INFO:root:USER(None): Hi, how are you? (lang=None, final=True)
+INFO:root:USER(None): What (lang=None, final=False)
+INFO:root:USER(None): What is (lang=None, final=False)
+INFO:root:USER(None): What is the weather in Nairobi? (lang=None, final=False)
+INFO:root:USER(None): What is the weather in Nairobi? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:server cancelled tool calls
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): What is the weather? (lang=None, final=False)
+INFO:root:USER(None): What is the weather? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+INFO:root:USER(None): What (lang=None, final=False)
+INFO:root:USER(None): What is (lang=None, final=False)
+INFO:root:USER(None): What is the (lang=None, final=False)
+INFO:root:USER(None): What is the weather in Tokyo? (lang=None, final=False)
+INFO:root:USER(None): What is the weather in Tokyo? (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Tokyo: Tokyo: \u2600\ufe0f   +27°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Dar es Salaam: Dar es Salaam: \u2600\ufe0f   +22°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:stream closed
+ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit:failed to emit event conversation_item_added
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 58, in emit
+    callback(*callback_args)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 53, in on_conversation_item_added
+    session.publish_event(
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AgentSession' object has no attribute 'publish_event'
+WARNING:livekit.agents:failed to publish transcription
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\room_io\_output.py", line 238, in _publish_transcription
+    await self._room.local_participant.publish_transcription(transcription)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\participant.py", line 285, in publish_transcription
+    raise PublishTranscriptionError(cb.publish_transcription.error)
+livekit.rtc.participant.PublishTranscriptionError: failed to send transcription, room closed: channel closed
+WARNING:livekit.agents:failed to publish transcription
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\room_io\_output.py", line 369, in capture_text
+    await self._writer.write(text)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\data_stream.py", line 295, in write
+    await self._send_chunk(chunk_msg)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\data_stream.py", line 213, in _send_chunk
+    raise ConnectionError(cb.send_stream_chunk.error)
+ConnectionError: engine: connection error: engine is closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+WARNING:livekit.agents:failed to publish transcription
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\room_io\_output.py", line 238, in _publish_transcription
+    await self._room.local_participant.publish_transcription(transcription)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\participant.py", line 285, in publish_transcription
+    raise PublishTranscriptionError(cb.publish_transcription.error)
+livekit.rtc.participant.PublishTranscriptionError: failed to send transcription, room closed: channel closed
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit:failed to emit event conversation_item_added
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 58, in emit
+    callback(*callback_args)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 53, in on_conversation_item_added
+    session.publish_event(
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AgentSession' object has no attribute 'publish_event'
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 72, in entrypoint
+    agent=Assistant(),
+          ^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 33, in __init__
+    voice=Voice.Aoede,
+          ^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\typing.py", line 1203, in __getattr__
+    return getattr(self.__origin__, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\typing.py", line 489, in __getattr__
+    raise AttributeError(item)
+AttributeError: Aoede
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+INFO:root:USER(None): \u0c28\u0c40\u0c35\u0c41 \u0c28\u0c40\u0c35\u0c41 \u0c28\u0c40\u0c35\u0c41 \u0c28\u0c3e \u0c2f\u0c47\u0c38\u0c2f\u0c4d\u0c2f \u0c28\u0c40 \u0c06\u0c24\u0c4d\u0c2e (lang=None, final=False)
+INFO:root:USER(None): \u0c28\u0c40\u0c35\u0c41 \u0c28\u0c40\u0c35\u0c41 \u0c28\u0c40\u0c35\u0c41 \u0c28\u0c3e \u0c2f\u0c47\u0c38\u0c2f\u0c4d\u0c2f \u0c28\u0c40 \u0c06\u0c24\u0c4d\u0c2e (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): \u0ca8\u0cbf\u0ca8\u0ccd\u0ca8 \u0ca8\u0cbf\u0ca8\u0ccd\u0ca8 \u0ca8\u0cbf (lang=None, final=False)
+INFO:root:USER(None): \u0ca8\u0cbf\u0ca8\u0ccd\u0ca8 \u0ca8\u0cbf\u0ca8\u0ccd\u0ca8 \u0ca8\u0cbf (lang=None, final=True)
+INFO:root:USER(None): \u0c06 \u0c06 \u0c06 \u0c06 (lang=None, final=False)
+INFO:root:USER(None): \u0c06 \u0c06 \u0c06 \u0c06 (lang=None, final=True)
+WARNING:livekit.plugins.silero:inference is slower than realtime
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+WARNING:livekit.agents:Running <Task finished name='Task-125' coro=<_execute_tools_task.<locals>._traceable_fnc_tool() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 3.52 seconds
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Tokyo: Tokyo: \u2600\ufe0f   +27°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +19°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+ERROR:livekit.plugins.google:Gemini Realtime API error: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+ERROR:livekit.agents:AgentSession is closing due to unrecoverable error
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+ERROR:livekit.plugins.google:Error in _main_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h; then sent 1011 (internal error) You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 641, in _main_task
+    raise APIConnectionError(message="Failed to connect to Gemini Live") from e
+livekit.agents._exceptions.APIConnectionError: Failed to connect to Gemini Live (body=None, retryable=True)
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+DEBUG:livekit.agents:start reading stream
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:shutting down worker
+INFO:livekit.agents:process exiting
+ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +15°C
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:executing tool
+INFO:root:Weather for Nairobi: Nairobi: \u26c5\ufe0f  +15°C
+WARNING:livekit.agents:Running <Task finished name='Task-129' coro=<_execute_tools_task.<locals>._traceable_fnc_tool() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 4.67 seconds
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): Um (lang=None, final=False)
+INFO:root:USER(None): Um right (lang=None, final=False)
+INFO:root:USER(None): Um right uh (lang=None, final=False)
+INFO:root:USER(None): Um right uh two (lang=None, final=False)
+INFO:root:USER(None): Um right uh two 1 (lang=None, final=False)
+INFO:root:USER(None): Um right uh two 100 (lang=None, final=False)
+INFO:root:USER(None): Um right uh two 100 word AC. (lang=None, final=False)
+INFO:root:USER(None): Um right uh two 100 word AC. (lang=None, final=True)
+INFO:root:USER(None): Um (lang=None, final=False)
+INFO:root:USER(None): Um the (lang=None, final=False)
+INFO:root:USER(None): Um the is (lang=None, final=False)
+INFO:root:USER(None): Um the issue (lang=None, final=False)
+INFO:root:USER(None): Um the issue can (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be abo (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the his (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the history (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the history of (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the history of Ken (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the history of Kenyan (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the history of Kenyan freedom fighters. (lang=None, final=False)
+INFO:root:USER(None): Um the issue can be about the history of Kenyan freedom fighters. (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+DEBUG:primp.utils:Loaded CA certs
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_CD=u=wt-wt&m=wt-wt"), name: Indexed(0, 8), value: Indexed(9, 24), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt"), name: Indexed(0, 7), value: Indexed(8, 26), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:rquest.connect:starting new connection: https://www.bing.com/
+DEBUG:rquest.util.client.connect.dns:resolving www.bing.com
+DEBUG:rquest.util.client.connect.http:connecting to 2.16.106.215:443
+DEBUG:rquest.util.client.connect.http:connected to 2.16.106.215:443
+DEBUG:rquest.util.client.pool:pooling idle connection for PoolKey { uri: https://www.bing.com/, alpn_protos: None, network: default }
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'MUID'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("MUIDB=2BB5D9D54ABD60181ABFCF824BAA61D6; expires=Wed, 23-Sep-2026 10:26:16 GMT; path=/; HttpOnly"), name: Indexed(0, 5), value: Indexed(6, 38), expires: Some(DateTime(2026-09-23 10:26:16.0 +00:00:00)), max_age: None, domain: None, path: Some(Indexed(84, 85)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt&F=1&SID=3A1DEE7FF683609A32A0F828F7946118; domain=.bing.com; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 67), expires: None, max_age: None, domain: Some(Indexed(76, 85)), path: Some(Indexed(92, 93)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_V=1; domain=.bing.com; expires=Wed, 23-Sep-2026 10:26:16 GMT; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2026-09-23 10:26:16.0 +00:00:00)), max_age: None, domain: Some(Indexed(18, 27)), path: Some(Indexed(73, 74)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHD=AF=NOFORM; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:16 GMT; path=/"), name: Indexed(0, 5), value: Indexed(6, 15), expires: Some(DateTime(2027-08-29 10:26:16.0 +00:00:00)), max_age: None, domain: Some(Indexed(24, 33)), path: Some(Indexed(79, 80)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUID=V=2&GUID=F81D531BF6CE41F1ABEADE9F8A9BFD63&dmnchg=1; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:16 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 58), expires: Some(DateTime(2027-08-29 10:26:16.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUSR=DOB=20250829; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:16 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 20), expires: Some(DateTime(2027-08-29 10:26:16.0 +00:00:00)), max_age: None, domain: Some(Indexed(29, 38)), path: Some(Indexed(84, 85)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHHPGUSR=SRCHLANG=en&IG=2C4673339FCE4A88B596F212053B6743; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:16 GMT; path=/"), name: Indexed(0, 10), value: Indexed(11, 58), expires: Some(DateTime(2027-08-29 10:26:16.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_SS=SID=3A1DEE7FF683609A32A0F828F7946118; domain=.bing.com; path=/"), name: Indexed(0, 3), value: Indexed(4, 40), expires: None, max_age: None, domain: Some(Indexed(49, 58)), path: Some(Indexed(65, 66)), secure: None, http_only: None, same_site: None, partitioned: None }'
+INFO:primp:response: https://www.bing.com/search?q=history+of+Kenyan+freedom+fighters&filters=ex1%3A%22ez5_19964_20329%22 200
+DEBUG:duckduckgo_search.DDGS:_get_url() https://www.bing.com/search?q=history+of+Kenyan+freedom+fighters&filters=ex1%3A%22ez5_19964_20329%22 200
+INFO:root:Search results for 'history of Kenyan freedom fighters': Your History lists the pages you've visited on Chrome in the last 90 days. It doesn't store: If you’re signed in to Chrome and sync your … Delete your activity automatically You can automatically delete some of the activity in your Google Account. On your computer, go to your … Manage saved Search history Delete Search history Important: If you delete Search history that’s saved to your Google Account, you can’t … Your transaction history only contains those made through Google Pay and not all UPI or banking transactions. If you can’t view your … Manage your Google Meet call history Legacy call history and Meet call history are stored and managed differently. Legacy call history is …
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:server cancelled tool calls
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): I (lang=None, final=False)
+INFO:root:USER(None): It is (lang=None, final=False)
+INFO:root:USER(None): It is for (lang=None, final=False)
+INFO:root:USER(None): It is for academic purposes. (lang=None, final=False)
+INFO:root:USER(None): It is for academic purposes. (lang=None, final=True)
+DEBUG:livekit.agents:executing tool
+DEBUG:primp.utils:Loaded CA certs
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_CD=u=wt-wt&m=wt-wt"), name: Indexed(0, 8), value: Indexed(9, 24), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt"), name: Indexed(0, 7), value: Indexed(8, 26), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:rquest.connect:starting new connection: https://www.bing.com/
+DEBUG:rquest.util.client.connect.dns:resolving www.bing.com
+DEBUG:rquest.util.client.connect.http:connecting to 2.16.106.200:443
+DEBUG:rquest.util.client.connect.http:connected to 2.16.106.200:443
+DEBUG:rquest.util.client.pool:pooling idle connection for PoolKey { uri: https://www.bing.com/, alpn_protos: None, network: default }
+DEBUG:cookie_store.cookie_store:inserting secure cookie 'MUID'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("MUIDB=104A4E7DA9036DE50140582AA87F6CCC; expires=Wed, 23-Sep-2026 10:26:37 GMT; path=/; HttpOnly"), name: Indexed(0, 5), value: Indexed(6, 38), expires: Some(DateTime(2026-09-23 10:26:37.0 +00:00:00)), max_age: None, domain: None, path: Some(Indexed(84, 85)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_S=ui=wt-wt&mkt=wt-wt&F=1&SID=3E3DDCEAC351683916A1CABDC22D699C; domain=.bing.com; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 67), expires: None, max_age: None, domain: Some(Indexed(76, 85)), path: Some(Indexed(92, 93)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_EDGE_V=1; domain=.bing.com; expires=Wed, 23-Sep-2026 10:26:37 GMT; path=/; HttpOnly"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2026-09-23 10:26:37.0 +00:00:00)), max_age: None, domain: Some(Indexed(18, 27)), path: Some(Indexed(73, 74)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHD=AF=NOFORM; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:37 GMT; path=/"), name: Indexed(0, 5), value: Indexed(6, 15), expires: Some(DateTime(2027-08-29 10:26:37.0 +00:00:00)), max_age: None, domain: Some(Indexed(24, 33)), path: Some(Indexed(79, 80)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUID=V=2&GUID=C706EC094AF04AEAA532013E98986821&dmnchg=1; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:37 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 58), expires: Some(DateTime(2027-08-29 10:26:37.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHUSR=DOB=20250829; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:37 GMT; path=/"), name: Indexed(0, 7), value: Indexed(8, 20), expires: Some(DateTime(2027-08-29 10:26:37.0 +00:00:00)), max_age: None, domain: Some(Indexed(29, 38)), path: Some(Indexed(84, 85)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("SRCHHPGUSR=SRCHLANG=en&IG=B2E75E7949F7493799F38D798A7F8BE4; domain=.bing.com; expires=Sun, 29-Aug-2027 10:26:37 GMT; path=/"), name: Indexed(0, 10), value: Indexed(11, 58), expires: Some(DateTime(2027-08-29 10:26:37.0 +00:00:00)), max_age: None, domain: Some(Indexed(67, 76)), path: Some(Indexed(122, 123)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("_SS=SID=3E3DDCEAC351683916A1CABDC22D699C; domain=.bing.com; path=/"), name: Indexed(0, 3), value: Indexed(4, 40), expires: None, max_age: None, domain: Some(Indexed(49, 58)), path: Some(Indexed(65, 66)), secure: None, http_only: None, same_site: None, partitioned: None }'
+DEBUG:cookie_store.cookie_store:inserting Set-Cookie 'Cookie { cookie_string: Some("ak_bmsc=F9B9D6D7A57804E150B4DF056A947C27~000000000000000000000000000000~YAAQCAcQAqe1Pu2YAQAA3Wtd9RyuJudwzKDPtebEKrUnI5ApQhHaq1hygetmU2i8W6qSCe5g+xcVCRMjHVKOEgMdlWW+IflRHK5tph14dkOgrc45vjmWf+Xgkzs+wyQWQq2wAhbzTPXXfhqecviqIILDEwi1HyNRW9zamiUSerEBD/tEXE1g3nlA0zTl/JvVeMPvO9Ns1xd5LcNbLHKTmoWSZj/Xeqag9AY2kj0tymxuO5+22GhiAoyD+X6is3s+l4QJjHMPt2dcReHF+VrO95dHb4IJPv1mSAPIYXJvNd2QdiLEAasqMsclTGAgTrTithD688zpnhvOIXEzZIrhbMNfRb1nn91qDO4hGP5E5+G6QPv9cyM1Cc4H4np5nDOh+KpkqNlLAcfSSOY=; Domain=.bing.com; Path=/; Expires=Fri, 29 Aug 2025 12:26:37 GMT; Max-Age=7200"), name: Indexed(0, 7), value: Indexed(8, 472), expires: Some(DateTime(2025-08-29 12:26:37.0 +00:00:00)), max_age: Some(Duration { seconds: 7200, nanoseconds: 0 }), domain: Some(Indexed(481, 490)), path: Some(Indexed(497, 498)), secure: None, http_only: None, same_site: None, partitioned: None }'
+INFO:primp:response: https://www.bing.com/search?q=history+of+Kenyan+freedom+fighters&filters=ex1%3A%22ez5_19964_20329%22 200
+DEBUG:duckduckgo_search.DDGS:_get_url() https://www.bing.com/search?q=history+of+Kenyan+freedom+fighters&filters=ex1%3A%22ez5_19964_20329%22 200
+INFO:root:Search results for 'history of Kenyan freedom fighters': Your History lists the pages you've visited on Chrome in the last 90 days. It doesn't store: If you’re signed in to Chrome and sync your history, then your History also shows pages you’ve visited on … Delete your activity automatically You can automatically delete some of the activity in your Google Account. On your computer, go to your Google Account. At the left, click Data & privacy. Under … Manage saved Search history Delete Search history Important: If you delete Search history that’s saved to your Google Account, you can’t get it back. You can delete a specific activity, or delete … Your transaction history only contains those made through Google Pay and not all UPI or banking transactions. If you can’t view your Google Pay transaction history, do the next steps. Manage your Google Meet call history Legacy call history and Meet call history are stored and managed differently. Legacy call history is saved only on the device the call was made on. Meet …
+DEBUG:livekit.agents:tools execution completed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.plugins.google:server cancelled tool calls
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): I (lang=None, final=False)
+INFO:root:USER(None): I am (lang=None, final=False)
+INFO:root:USER(None): I am see (lang=None, final=False)
+INFO:root:USER(None): I am seeing (lang=None, final=False)
+INFO:root:USER(None): I am seeing that (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being inter (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being interrup (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being interrupted (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being interrupted. (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being interrupted. wha (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being interrupted. what might be the problem? (lang=None, final=False)
+INFO:root:USER(None): I am seeing that you are being interrupted. what might be the problem? (lang=None, final=True)
+INFO:root:USER(None): Um (lang=None, final=False)
+INFO:root:USER(None): Um, (lang=None, final=False)
+INFO:root:USER(None): Um, no (lang=None, final=False)
+INFO:root:USER(None): Um, no, I (lang=None, final=False)
+INFO:root:USER(None): Um, no, I just (lang=None, final=False)
+INFO:root:USER(None): Um, no, I just wan (lang=None, final=False)
+INFO:root:USER(None): Um, no, I just wanted (lang=None, final=False)
+INFO:root:USER(None): Um, no, I just wanted the (lang=None, final=False)
+INFO:root:USER(None): Um, no, I just wanted the the (lang=None, final=False)
+INFO:root:USER(None): Um, no, I just wanted the the 200 word. (lang=None, final=False)
+INFO:root:USER(None): Um, no, I just wanted the the 200 word. (lang=None, final=True)
+INFO:root:USER(None): Cool I have the ACL. (lang=None, final=False)
+INFO:root:USER(None): Cool I have the ACL. (lang=None, final=True)
+INFO:root:USER(None): Okay. (lang=None, final=False)
+INFO:root:USER(None): Okay. (lang=None, final=True)
+INFO:root:USER(None): No (lang=None, final=False)
+INFO:root:USER(None): No, (lang=None, final=False)
+INFO:root:USER(None): No, that (lang=None, final=False)
+INFO:root:USER(None): No, that was perfect. (lang=None, final=False)
+INFO:root:USER(None): No, that was perfect. (lang=None, final=True)
+INFO:root:USER(None): You (lang=None, final=False)
+INFO:root:USER(None): You can (lang=None, final=False)
+INFO:root:USER(None): You can bu (lang=None, final=False)
+INFO:root:USER(None): You can bust (lang=None, final=False)
+INFO:root:USER(None): You can bust in (lang=None, final=False)
+INFO:root:USER(None): You can bust in the (lang=None, final=False)
+INFO:root:USER(None): You can bust in the glow (lang=None, final=False)
+INFO:root:USER(None): You can bust in the glow of (lang=None, final=False)
+INFO:root:USER(None): You can bust in the glow of your own brilliance. (lang=None, final=False)
+INFO:root:USER(None): You can bust in the glow of your own brilliance. (lang=None, final=True)
+INFO:root:USER(None): Could (lang=None, final=False)
+INFO:root:USER(None): Could you (lang=None, final=False)
+INFO:root:USER(None): Could you gene (lang=None, final=False)
+INFO:root:USER(None): Could you generate a (lang=None, final=False)
+INFO:root:USER(None): Could you generate a person (lang=None, final=False)
+INFO:root:USER(None): Could you generate a personali (lang=None, final=False)
+INFO:root:USER(None): Could you generate a personalized meal plan? (lang=None, final=False)
+INFO:root:USER(None): Could you generate a personalized meal plan? (lang=None, final=True)
+INFO:root:USER(None): I (lang=None, final=False)
+INFO:root:USER(None): I am (lang=None, final=False)
+INFO:root:USER(None): I am trying (lang=None, final=False)
+INFO:root:USER(None): I am trying to (lang=None, final=False)
+INFO:root:USER(None): I am trying to bulk. (lang=None, final=False)
+INFO:root:USER(None): I am trying to bulk. (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): A (lang=None, final=False)
+INFO:root:USER(None): As of (lang=None, final=False)
+INFO:root:USER(None): As of now (lang=None, final=False)
+INFO:root:USER(None): As of now I (lang=None, final=False)
+INFO:root:USER(None): As of now I'm (lang=None, final=False)
+INFO:root:USER(None): As of now I'm cur (lang=None, final=False)
+INFO:root:USER(None): As of now I'm currently (lang=None, final=False)
+INFO:root:USER(None): As of now I'm currently 6 (lang=None, final=False)
+INFO:root:USER(None): As of now I'm currently 62 (lang=None, final=False)
+INFO:root:USER(None): As of now I'm currently 62 k (lang=None, final=False)
+INFO:root:USER(None): As of now I'm currently 62 kg. (lang=None, final=False)
+INFO:root:USER(None): As of now I'm currently 62 kg. (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): So could you tell us (lang=None, final=False)
+INFO:root:USER(None): So could you tell us (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): plan that (lang=None, final=False)
+INFO:root:USER(None): plan that (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): incorporated (lang=None, final=False)
+INFO:root:USER(None): incorporated (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): All of that (lang=None, final=False)
+INFO:root:USER(None): All of that (lang=None, final=True)
+INFO:root:USER(None): Could (lang=None, final=False)
+INFO:root:USER(None): Could I have the meal plan? (lang=None, final=False)
+INFO:root:USER(None): Could I have the meal plan? (lang=None, final=True)
+INFO:root:USER(None): Ye (lang=None, final=False)
+INFO:root:USER(None): Yes (lang=None, final=False)
+INFO:root:USER(None): Yes, co (lang=None, final=False)
+INFO:root:USER(None): Yes, colle (lang=None, final=False)
+INFO:root:USER(None): Yes, colleague (lang=None, final=False)
+INFO:root:USER(None): Yes, colleague one (lang=None, final=False)
+INFO:root:USER(None): Yes, colleague one Af (lang=None, final=False)
+INFO:root:USER(None): Yes, colleague one Afri (lang=None, final=False)
+INFO:root:USER(None): Yes, colleague one African (lang=None, final=False)
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+INFO:root:USER(None): Yes, colleague one African (lang=None, final=True)
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): like (lang=None, final=False)
+INFO:root:USER(None): like may (lang=None, final=False)
+INFO:root:USER(None): like maybe (lang=None, final=False)
+INFO:root:USER(None): like maybe some (lang=None, final=False)
+INFO:root:USER(None): like maybe something (lang=None, final=False)
+INFO:root:USER(None): like maybe something with (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more Af (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more Africa (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more African or (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more African or Ken (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more African or Kenyan (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more African or Kenyan grown food. (lang=None, final=False)
+INFO:root:USER(None): like maybe something with more African or Kenyan grown food. (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): su (lang=None, final=False)
+INFO:root:USER(None): such (lang=None, final=False)
+INFO:root:USER(None): such as (lang=None, final=False)
+INFO:root:USER(None): such as maybe ugali (lang=None, final=False)
+INFO:root:USER(None): such as maybe ugali (lang=None, final=True)
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): and (lang=None, final=False)
+INFO:root:USER(None): and other (lang=None, final=False)
+INFO:root:USER(None): and other com (lang=None, final=False)
+INFO:root:USER(None): and other commo (lang=None, final=False)
+INFO:root:USER(None): and other common or (lang=None, final=False)
+INFO:root:USER(None): and other common or lo (lang=None, final=False)
+INFO:root:USER(None): and other common or local (lang=None, final=False)
+INFO:root:USER(None): and other common or local delicacies. (lang=None, final=False)
+INFO:root:USER(None): and other common or local delicacies. (lang=None, final=True)
+INFO:root:USER(None): COULD I HAVE THE MILL? (lang=None, final=False)
+INFO:root:USER(None): COULD I HAVE THE MILL? (lang=None, final=True)
+INFO:root:USER(None): No (lang=None, final=False)
+INFO:root:USER(None): No that is okay. Thank you. (lang=None, final=False)
+INFO:root:USER(None): No that is okay. Thank you. (lang=None, final=True)
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
