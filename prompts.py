@@ -49,7 +49,7 @@ AGENT_INSTRUCTION = """
   empowering them to feel more balanced in mind and body.
 """
 
-SESSION_INSTRUCTION = """
+MENTAL_SESSION_INSTRUCTION = """
 # Task
 Conduct a comprehensive wellness intake while building rapport and providing personalized mental and physical wellness support. 
 If the user is visible on camera, warmly acknowledge their presence and, with permission, offer to use visual mood tracking to better understand their current state. 

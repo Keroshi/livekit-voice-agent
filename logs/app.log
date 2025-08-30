@@ -3504,3 +3504,902 @@ DEBUG:livekit.agents:job exiting
 DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
 INFO:livekit.agents:shutting down worker
 INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+WARNING:watchfiles.main:process already dead, exit code: 0
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+WARNING:watchfiles.main:process already dead, exit code: 1
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+ERROR:asyncio:Exception in callback Future.set_result(None)
+handle: <Handle Future.set_result(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+asyncio.exceptions.InvalidStateError: invalid state
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 58, in entrypoint
+    @session.on("user_input_transcribed")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 172, in decorator
+    self.on(event, callback)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 161, in on
+    raise ValueError(
+ValueError: Cannot register an async callback with `.on()`. Use `asyncio.create_task` within your synchronous callback instead.
+WARNING:watchfiles.main:process already dead, exit code: 1
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 58, in entrypoint
+    @session.on("user_input_transcribed")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 172, in decorator
+    self.on(event, callback)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 161, in on
+    raise ValueError(
+ValueError: Cannot register an async callback with `.on()`. Use `asyncio.create_task` within your synchronous callback instead.
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:job exiting
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 58, in entrypoint
+    @session.on("user_input_transcribed")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 172, in decorator
+    self.on(event, callback)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 161, in on
+    raise ValueError(
+ValueError: Cannot register an async callback with `.on()`. Use `asyncio.create_task` within your synchronous callback instead.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\agent.py", line 58, in entrypoint
+    @session.on("user_input_transcribed")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 172, in decorator
+    self.on(event, callback)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\event_emitter.py", line 161, in on
+    raise ValueError(
+ValueError: Cannot register an async callback with `.on()`. Use `asyncio.create_task` within your synchronous callback instead.
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:job exiting
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:Received data: {'id': 'ed4b35a1-8503-4d81-bb05-4d906f93516a', 'timestamp': 1756588448769, 'message': 'Can you see me?', 'from': {'_events': {'trackMuted': [None, None, None, None, None, None, None, None, None, None, None], 'trackUnmuted': [None, None, None, None, None, None, None, None, None, None, None], 'participantPermissionsChanged': [None, None, None, None, None, None, None, None, None, None, None], 'trackPublished': [None, None, None, None, None, None, None, None, None, None], 'trackUnpublished': [None, None, None, None, None, None, None, None, None, None], 'localTrackPublished': [None, None, None, None, None, None, None, None, None, None, None], 'localTrackUnpublished': [None, None, None, None, None, None, None, None, None, None, None], 'mediaDevicesError': [None, None, None, None, None, None, None, None, None, None, None], 'trackSubscriptionStatusChanged': [None, None, None, None, None, None, None, None, None, None]}, '_eventsCount': 15, '_maxListeners': 100, 'audioLevel': 0, 'isSpeaking': False, '_connectionQuality': 'excellent', 'log': {'name': 'livekit-participant', 'levels': {'TRACE': 0, 'DEBUG': 1, 'INFO': 2, 'WARN': 3, 'ERROR': 4, 'SILENT': 5}}, 'loggerOptions': {}, 'sid': 'PA_c9vKubUNTcPg', 'identity': 'identity-Mv3g', 'name': '', 'metadata': '', 'audioTrackPublications': {}, 'videoTrackPublications': {}, 'trackPublications': {}, '_kind': 0, '_attributes': {}, 'pendingPublishing': {}, 'pendingPublishPromises': {}, 'participantTrackPermissions': [], 'allParticipantsAllowedToSubscribe': True, 'encryptionType': 0, 'enabledPublishVideoCodecs': [{'mime': 'video/VP8', 'fmtpLine': ''}, {'mime': 'video/H264', 'fmtpLine': ''}, {'mime': 'video/VP9', 'fmtpLine': ''}, {'mime': 'video/AV1', 'fmtpLine': ''}, {'mime': 'video/H265', 'fmtpLine': ''}], 'pendingAcks': {}, 'pendingResponses': {}, 'engine': {'_events': {'disconnected': [None, None], 'dataPacketReceived': [None, None], 'resuming': [None, None], 'signalResumed': [None, None], 'restarting': [None, None], 'signalRestarted': [None, None]}, '_eventsCount': 24, 'options': {'adaptiveStream': False, 'dynacast': False, 'stopLocalTrackOnUnpublish': True, 'reconnectPolicy': {'_retryDelays': [0, 300, 1200, 2700, 4800, 7000, 7000, 7000, 7000, 7000]}, 'disconnectOnPageLeave': True, 'webAudioMix': False, 'audioCaptureDefaults': {'deviceId': {'ideal': 'default'}, 'autoGainControl': True, 'echoCancellation': True, 'noiseSuppression': True, 'voiceIsolation': True}, 'videoCaptureDefaults': {'deviceId': {'ideal': 'default'}, 'resolution': {'width': 1280, 'height': 720, 'frameRate': 30, 'aspectRatio': 1.7777777777777777}}, 'publishDefaults': {'audioPreset': {'maxBitrate': 48000}, 'dtx': True, 'red': True, 'forceStereo': False, 'simulcast': True, 'screenShareEncoding': {'maxBitrate': 2500000, 'maxFramerate': 15, 'priority': 'medium'}, 'stopMicTrackOnMute': False, 'videoCodec': 'vp8', 'backupCodec': True}}, 'rtcConfig': {}, 'peerConnectionTimeout': 15000, 'fullReconnectOnNext': False, 'subscriberPrimary': True, 'pcState': 1, '_isClosed': False, 'pendingTrackResolvers': {}, 'reconnectAttempts': 0, 'reconnectStart': 0, 'attemptingReconnect': False, 'joinAttempts': 1, 'maxJoinAttempts': 1, 'shouldFailNext': False, 'log': {'name': 'livekit-engine', 'levels': {'TRACE': 0, 'DEBUG': 1, 'INFO': 2, 'WARN': 3, 'ERROR': 4, 'SILENT': 5}}, 'loggerOptions': {}, 'client': {'rtt': 191, 'state': 1, 'log': {'name': 'livekit-signal', 'levels': {'TRACE': 0, 'DEBUG': 1, 'INFO': 2, 'WARN': 3, 'ERROR': 4, 'SILENT': 5}}, '_requestId': 0, 'useJSON': False, 'requestQueue': {'pendingTasks': {}, 'taskMutex': {'_locking': {}, '_locks': 0}, 'nextTaskIndex': 135}, 'queuedRequests': [], 'closingLock': {'_locking': {}, '_locks': 0}, 'connectionLock': {'_locking': {}, '_locks': 0}, 'options': {'autoSubscribe': True, 'adaptiveStream': False, 'maxRetries': 1, 'e2eeEnabled': False, 'websocketTimeout': 15000}, 'connectOptions': {'autoSubscribe': True, 'adaptiveStream': False, 'maxRetries': 1, 'e2eeEnabled': False, 'websocketTimeout': 15000}, 'ws': {}, 'pingTimeoutDuration': 15, 'pingIntervalDuration': 5, 'pingTimeout': 505, 'pingInterval': 31}, 'reconnectPolicy': {'_retryDelays': [0, 300, 1200, 2700, 4800, 7000, 7000, 7000, 7000, 7000]}, 'closingLock': {'_locking': {}, '_locks': 0}, 'dataProcessLock': {'_locking': {}, '_locks': 0}, 'dcBufferStatus': {}, 'regionUrlProvider': {'lastUpdateAt': 1756588152683, 'settingsCacheTime': 3000, 'attemptedRegions': [], 'serverUrl': 'wss://mindflex-xawp7he1.livekit.cloud/', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTY2MDk3NTQsImlkZW50aXR5IjoiaWRlbnRpdHktTXYzZyIsImlzcyI6IkFQSUUyaU1RMmp6SE5FciIsIm5iZiI6MTc1NjU4ODE1NCwic3ViIjoiaWRlbnRpdHktTXYzZyIsInZpZGVvIjp7ImNhblB1Ymxpc2giOnRydWUsImNhblB1Ymxpc2hEYXRhIjp0cnVlLCJjYW5TdWJzY3JpYmUiOnRydWUsInJvb20iOiJwbGF5Z3JvdW5kLVFkMkstWWpoViIsInJvb21Kb2luIjp0cnVlfX0.TzxH80__SFZnFvJu6E5TFx7SxTIoFJqEsFR3JPVTJlk', 'regionSettings': {'regions': [{'region': 'ojeddah1a', 'url': 'https://mindflex-xawp7he1.ojeddah1a.production.livekit.cloud', 'distance': '2549532'}, {'region': 'ojohannesburg1a', 'url': 'https://mindflex-xawp7he1.ojohannesburg1a.production.livekit.cloud', 'distance': '2929930'}, {'region': 'odubai1a', 'url': 'https://mindflex-xawp7he1.odubai1a.production.livekit.cloud', 'distance': '3558093'}]}}, 'url': 'wss://mindflex-xawp7he1.livekit.cloud', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTY1ODg3NTUsImlkZW50aXR5IjoiaWRlbnRpdHktTXYzZyIsImlzcyI6IkFQSUUyaU1RMmp6SE5FciIsIm5iZiI6MTc1NjU4ODE1NSwic3ViIjoiaWRlbnRpdHktTXYzZyIsInZpZGVvIjp7ImNhblB1Ymxpc2giOnRydWUsImNhblB1Ymxpc2hEYXRhIjp0cnVlLCJjYW5TdWJzY3JpYmUiOnRydWUsInJvb20iOiJwbGF5Z3JvdW5kLVFkMkstWWpoViIsInJvb21Kb2luIjp0cnVlfX0.KnDtteRFqYLm9Au-rTf1tPIutprCHhCQBofMar4FW2w', 'signalOpts': {'autoSubscribe': True, 'adaptiveStream': False, 'maxRetries': 1, 'e2eeEnabled': False, 'websocketTimeout': 15000}, 'latestJoinResponse': {'room': {'sid': '', 'name': 'playground-Qd2K-YjhV', 'emptyTimeout': 300, 'maxParticipants': 0, 'creationTime': '1756588155', 'turnPassword': '', 'enabledCodecs': [{'mime': 'video/H264', 'fmtpLine': ''}, {'mime': 'video/VP8', 'fmtpLine': ''}, {'mime': 'video/VP9', 'fmtpLine': ''}, {'mime': 'video/AV1', 'fmtpLine': ''}, {'mime': 'audio/red', 'fmtpLine': ''}, {'mime': 'audio/opus', 'fmtpLine': ''}], 'metadata': '', 'numParticipants': 0, 'activeRecording': False, 'numPublishers': 0, 'version': {'unixMicro': '943920000000000', 'ticks': 0}, 'departureTimeout': 20, 'creationTimeMs': '1756588155956'}, 'participant': {'sid': 'PA_c9vKubUNTcPg', 'identity': 'identity-Mv3g', 'state': 'JOINING', 'tracks': [], 'metadata': '', 'joinedAt': '1756588155', 'name': '', 'version': 0, 'permission': {'canSubscribe': True, 'canPublish': True, 'canPublishData': True, 'hidden': False, 'recorder': False, 'canPublishSources': [], 'canUpdateMetadata': False, 'agent': False, 'canSubscribeMetrics': False}, 'region': 'olondon1b', 'isPublisher': False, 'kind': 'STANDARD', 'attributes': {}, 'disconnectReason': 'UNKNOWN_REASON', 'joinedAtMs': '1756588155966', 'kindDetails': []}, 'otherParticipants': [], 'serverVersion': '1.9.0', 'iceServers': [{'urls': ['turn:ip-132-145-65-255.host.livekit.cloud:3478?transport=udp', 'turns:olondon1b.turn.livekit.cloud:443?transport=tcp', 'turns:mindflex-xawp7he1.turn.livekit.cloud:443?transport=tcp'], 'username': 'nB1YU5UViV3S2lzYfKIo4TuicCJ9UTmoaKNZKKJoCC', 'credential': 'YAcpaVnJGB1VanX552vFehFh5x3x2mvSuzENQeVyRxy'}], 'subscriberPrimary': True, 'alternativeUrl': '', 'serverRegion': 'UK', 'pingTimeout': 15, 'pingInterval': 5, 'serverInfo': {'edition': 'Cloud', 'version': '1.9.0', 'protocol': 16, 'region': 'UK', 'nodeId': 'NM_OLONDON1B_fsTJX8tNB7ed', 'debugInfo': '', 'agentProtocol': 0}, 'sifTrailer': 'HZ84GpFfDUk=', 'enabledPublishCodecs': [{'mime': 'video/VP8', 'fmtpLine': ''}, {'mime': 'video/H264', 'fmtpLine': ''}, {'mime': 'video/VP9', 'fmtpLine': ''}, {'mime': 'video/AV1', 'fmtpLine': ''}, {'mime': 'video/H265', 'fmtpLine': ''}, {'mime': 'audio/red', 'fmtpLine': ''}, {'mime': 'audio/opus', 'fmtpLine': ''}], 'fastPublish': True}, 'participantSid': 'PA_c9vKubUNTcPg', 'pcManager': {'peerConnectionTimeout': 15000, 'log': {'name': 'livekit-pc-manager', 'levels': {'TRACE': 0, 'DEBUG': 1, 'INFO': 2, 'WARN': 3, 'ERROR': 4, 'SILENT': 5}}, 'loggerOptions': {}, 'isPublisherConnectionRequired': True, 'isSubscriberConnectionRequired': True, 'publisher': {'_events': {}, '_eventsCount': 0, 'log': {'name': 'livekit-pc-transport', 'levels': {'TRACE': 0, 'DEBUG': 1, 'INFO': 2, 'WARN': 3, 'ERROR': 4, 'SILENT': 5}}, 'ddExtID': 0, 'pendingCandidates': [], 'restartingIce': False, 'renegotiate': False, 'trackBitrates': [], 'remoteStereoMids': [], 'remoteNackMids': [], 'loggerOptions': {}, 'config': {'iceServers': [{'urls': ['turn:ip-132-145-65-255.host.livekit.cloud:3478?transport=udp', 'turns:olondon1b.turn.livekit.cloud:443?transport=tcp', 'turns:mindflex-xawp7he1.turn.livekit.cloud:443?transport=tcp'], 'username': 'nB1YU5UViV3S2lzYfKIo4TuicCJ9UTmoaKNZKKJoCC', 'credential': 'YAcpaVnJGB1VanX552vFehFh5x3x2mvSuzENQeVyRxy'}], 'sdpSemantics': 'unified-plan', 'continualGatheringPolicy': 'gather_continually'}, '_pc': {'_eventMap': {'datachannel': {}, 'track': {}}, '_sctp': {}}}, 'subscriber': {'_events': {}, '_eventsCount': 0, 'log': {'name': 'livekit-pc-transport', 'levels': {'TRACE': 0, 'DEBUG': 1, 'INFO': 2, 'WARN': 3, 'ERROR': 4, 'SILENT': 5}}, 'ddExtID': 0, 'pendingCandidates': [], 'restartingIce': False, 'renegotiate': False, 'trackBitrates': [], 'remoteStereoMids': [], 'remoteNackMids': [], 'loggerOptions': {}, 'config': {'iceServers': [{'urls': ['turn:ip-132-145-65-255.host.livekit.cloud:3478?transport=udp', 'turns:olondon1b.turn.livekit.cloud:443?transport=tcp', 'turns:mindflex-xawp7he1.turn.livekit.cloud:443?transport=tcp'], 'username': 'nB1YU5UViV3S2lzYfKIo4TuicCJ9UTmoaKNZKKJoCC', 'credential': 'YAcpaVnJGB1VanX552vFehFh5x3x2mvSuzENQeVyRxy'}], 'sdpSemantics': 'unified-plan', 'continualGatheringPolicy': 'gather_continually'}, '_pc': {'_eventMap': {'datachannel': {}, 'track': {}}, '_sctp': {}}}, 'state': 2, 'connectionLock': {'_locking': {}, '_locks': 0}, 'remoteOfferLock': {'_locking': {}, '_locks': 0}}, 'lossyDC': {}, 'reliableDC': {}, 'reliableDCSub': {}, 'lossyDCSub': {}, 'publisherConnectionPromise': {}}, 'roomOptions': {'adaptiveStream': False, 'dynacast': False, 'stopLocalTrackOnUnpublish': True, 'reconnectPolicy': {'_retryDelays': [0, 300, 1200, 2700, 4800, 7000, 7000, 7000, 7000, 7000]}, 'disconnectOnPageLeave': True, 'webAudioMix': False, 'audioCaptureDefaults': {'deviceId': {'ideal': 'default'}, 'autoGainControl': True, 'echoCancellation': True, 'noiseSuppression': True, 'voiceIsolation': True}, 'videoCaptureDefaults': {'deviceId': {'ideal': 'default'}, 'resolution': {'width': 1280, 'height': 720, 'frameRate': 30, 'aspectRatio': 1.7777777777777777}}, 'publishDefaults': {'audioPreset': {'maxBitrate': 48000}, 'dtx': True, 'red': True, 'forceStereo': False, 'simulcast': True, 'screenShareEncoding': {'maxBitrate': 2500000, 'maxFramerate': 15, 'priority': 'medium'}, 'stopMicTrackOnMute': False, 'videoCodec': 'vp8', 'backupCodec': True}}, 'activeDeviceMap': {}, 'pendingSignalRequests': {}, 'rpcHandlers': {}, 'audioContext': {}, 'permissions': {'canSubscribe': True, 'canPublish': True, 'canPublishData': True, 'hidden': False, 'recorder': False, 'canPublishSources': [], 'canUpdateMetadata': False, 'agent': False, 'canSubscribeMetrics': False}, 'participantInfo': {'sid': 'PA_c9vKubUNTcPg', 'identity': 'identity-Mv3g', 'state': 'ACTIVE', 'tracks': [{'sid': 'TR_AMGpwFBqgBumkh', 'type': 'AUDIO', 'name': '', 'muted': False, 'width': 0, 'height': 0, 'simulcast': False, 'disableDtx': False, 'source': 'MICROPHONE', 'layers': [], 'mimeType': 'audio/red', 'mid': '1', 'codecs': [{'mimeType': 'audio/red', 'mid': '1', 'cid': '4a46c1e3-c27f-4e33-a098-3b8e9a46566e', 'layers': []}], 'stereo': False, 'disableRed': False, 'encryption': 'NONE', 'stream': 'camera', 'version': {'unixMicro': '1756588158459439', 'ticks': 0}, 'audioFeatures': [], 'backupCodecPolicy': 'PREFER_REGRESSION'}, {'sid': 'TR_VCEbHHJMrnmDtH', 'type': 'VIDEO', 'name': '', 'muted': False, 'width': 1280, 'height': 720, 'simulcast': True, 'disableDtx': False, 'source': 'CAMERA', 'layers': [{'quality': 'LOW', 'width': 320, 'height': 180, 'bitrate': 160000, 'ssrc': 630476109}, {'quality': 'MEDIUM', 'width': 640, 'height': 360, 'bitrate': 450000, 'ssrc': 418688931}, {'quality': 'HIGH', 'width': 1280, 'height': 720, 'bitrate': 1700000, 'ssrc': 2893385129}], 'mimeType': 'video/VP8', 'mid': '2', 'codecs': [{'mimeType': 'video/VP8', 'mid': '2', 'cid': '5d01289b-1a1d-4949-9760-6bd504511dbb', 'layers': [{'quality': 'LOW', 'width': 320, 'height': 180, 'bitrate': 160000, 'ssrc': 630476109}, {'quality': 'MEDIUM', 'width': 640, 'height': 360, 'bitrate': 450000, 'ssrc': 418688931}, {'quality': 'HIGH', 'width': 1280, 'height': 720, 'bitrate': 1700000, 'ssrc': 2893385129}]}], 'stereo': False, 'disableRed': False, 'encryption': 'NONE', 'stream': 'camera', 'version': {'unixMicro': '1756588158878820', 'ticks': 0}, 'audioFeatures': [], 'backupCodecPolicy': 'PREFER_REGRESSION'}], 'metadata': '', 'joinedAt': '1756588155', 'name': '', 'version': 7, 'permission': {'canSubscribe': True, 'canPublish': True, 'canPublishData': True, 'hidden': False, 'recorder': False, 'canPublishSources': [], 'canUpdateMetadata': False, 'agent': False, 'canSubscribeMetrics': False}, 'region': 'olondon1b', 'isPublisher': True, 'kind': 'STANDARD', 'attributes': {}, 'disconnectReason': 'UNKNOWN_REASON', 'joinedAtMs': '1756588155966', 'kindDetails': []}}, 'ignoreLegacy': True}
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): Hi, how are you? (lang=None, final=False)
+INFO:root:USER(None): Hi, how are you? (lang=None, final=True)
+INFO:root:USER(None): Oh (lang=None, final=False)
+INFO:root:USER(None): Oh, (lang=None, final=False)
+INFO:root:USER(None): Oh, you (lang=None, final=False)
+INFO:root:USER(None): Oh, you can (lang=None, final=False)
+INFO:root:USER(None): Oh, you can see (lang=None, final=False)
+INFO:root:USER(None): Oh, you can see me (lang=None, final=False)
+INFO:root:USER(None): Oh, you can see me. Uh what glasses? (lang=None, final=False)
+INFO:root:USER(None): Oh, you can see me. Uh what glasses? (lang=None, final=True)
+INFO:root:USER(None): I'll rather talk. (lang=None, final=False)
+INFO:root:USER(None): I'll rather talk. (lang=None, final=True)
+INFO:root:USER(None): I am good. (lang=None, final=False)
+INFO:root:USER(None): I am good. (lang=None, final=True)
+INFO:root:USER(None): \u0928\u094b (lang=None, final=False)
+INFO:root:USER(None): \u0928\u094b \u0925\u0948\u0902 (lang=None, final=False)
+INFO:root:USER(None): \u0928\u094b \u0925\u0948\u0902\u0915 \u092f\u0942 (lang=None, final=False)
+INFO:root:USER(None): \u0928\u094b \u0925\u0948\u0902\u0915 \u092f\u0942 that will be all. (lang=None, final=False)
+INFO:root:USER(None): \u0928\u094b \u0925\u0948\u0902\u0915 \u092f\u0942 that will be all. (lang=None, final=True)
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+INFO:root:USER(None): Bon. (lang=None, final=False)
+INFO:root:USER(None): Bon. (lang=None, final=True)
+INFO:root:USER(None): I (lang=None, final=False)
+INFO:root:USER(None): I would (lang=None, final=False)
+INFO:root:USER(None): I would like (lang=None, final=False)
+INFO:root:USER(None): I would like a (lang=None, final=False)
+INFO:root:USER(None): I would like a phy (lang=None, final=False)
+INFO:root:USER(None): I would like a physical (lang=None, final=False)
+INFO:root:USER(None): I would like a physical session. (lang=None, final=False)
+INFO:root:USER(None): I would like a physical session. (lang=None, final=True)
+INFO:livekit.agents:shutting down worker
+ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:stream closed
+WARNING:livekit.agents:failed to publish transcription
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\room_io\_output.py", line 238, in _publish_transcription
+    await self._room.local_participant.publish_transcription(transcription)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\participant.py", line 285, in publish_transcription
+    raise PublishTranscriptionError(cb.publish_transcription.error)
+livekit.rtc.participant.PublishTranscriptionError: engine: connection error: engine is closed
+WARNING:livekit.agents:failed to publish transcription
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\room_io\_output.py", line 369, in capture_text
+    await self._writer.write(text)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\data_stream.py", line 295, in write
+    await self._send_chunk(chunk_msg)
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\rtc\data_stream.py", line 213, in _send_chunk
+    raise ConnectionError(cb.send_stream_chunk.error)
+ConnectionError: engine: connection error: engine is closed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+WARNING:livekit.agents:exiting forcefully
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:root:USER(None): \u307e \u3001 (lang=None, final=False)
+INFO:root:USER(None): \u307e \u3001 \u3064 (lang=None, final=False)
+INFO:root:USER(None): \u307e \u3001 \u3064\u307e (lang=None, final=False)
+INFO:root:USER(None): \u307e \u3001 \u3064\u307e\u308a \u3055 (lang=None, final=False)
+INFO:root:USER(None): \u307e \u3001 \u3064\u307e\u308a \u3055 \u3001 (lang=None, final=False)
+INFO:root:USER(None): \u307e \u3001 \u3064\u307e\u308a \u3055 \u3001 1 (lang=None, final=False)
+INFO:root:USER(None): \u307e \u3001 \u3064\u307e\u308a \u3055 \u3001 10 \u5e74 \u306b \u65e9\u3044 \u3053\u3068 \u3001 \u3048 \u3001 \u3053\u308c \u3092 10 (lang=None, final=False)
+INFO:root:USER(None): \u307e \u3001 \u3064\u307e\u308a \u3055 \u3001 10 \u5e74 \u306b \u65e9\u3044 \u3053\u3068 \u3001 \u3048 \u3001 \u3053\u308c \u3092 10 (lang=None, final=True)
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:shutting down job task
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
