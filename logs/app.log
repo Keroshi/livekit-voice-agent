@@ -2496,3 +2496,1011 @@ DEBUG:livekit.agents:session closed
 DEBUG:livekit.agents:http_session(): closing the httpclient ctx
 DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
 INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+DEBUG:livekit.agents:start reading stream
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+WARNING:livekit.agents:the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:job exiting
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+WARNING:livekit.plugins.google:truncate is not supported by the Google Realtime API.
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+ERROR:livekit.plugins.google:Gemini Realtime API error: received 1011 (internal error) Internal error encountered.; then sent 1011 (internal error) Internal error encountered.
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) Internal error encountered.; then sent 1011 (internal error) Internal error encountered.
+ERROR:livekit.plugins.google:Error in _main_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 591, in _main_task
+    async with self._client.aio.live.connect(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\google\genai\live.py", line 1057, in connect
+    logger.info(await ws.recv(decode=False))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error) Internal error encountered.; then sent 1011 (internal error) Internal error encountered.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 641, in _main_task
+    raise APIConnectionError(message="Failed to connect to Gemini Live") from e
+livekit.agents._exceptions.APIConnectionError: Failed to connect to Gemini Live (body=None, retryable=True)
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+ERROR:livekit.agents:Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1775, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+WARNING:livekit.agents:Running <Task finished name='Task-50' coro=<AgentSession._update_activity() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_session.py:806> result=None> took too long: 2.16 seconds
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+WARNING:livekit.agents:Running <Task finished name='Task-63' coro=<AgentSession._update_activity() done, defined at C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\voice\agent_session.py:806> result=None> took too long: 2.25 seconds
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+ERROR:livekit.agents:job shutdown is taking too much time..
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+INFO:livekit.agents:killing process
+ERROR:livekit.agents:worker failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\_run.py", line 79, in _worker_run
+    await worker.run()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\worker.py", line 403, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\supervised_proc.py", line 169, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+ERROR:livekit.agents:Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Python Projexts\livekit-voice-agent\.venv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:job runner initialized
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+ERROR:livekit.agents:job shutdown is taking too much time..
+WARNING:livekit.plugins.silero:inference is slower than realtime
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+ERROR:livekit.agents:job shutdown is taking too much time..
+WARNING:livekit.agents:exiting forcefully
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:inference runner initialized
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+WARNING:livekit.plugins.google:Gemini server indicates disconnection soon. Time left: 50s
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+INFO:livekit.agents:shutting down worker
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:process exiting
+DEBUG:asyncio:Using proactor: IocpProactor
+DEV:livekit.agents:Watching C:\Users\User\Python Projexts\livekit-voice-agent
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+INFO:livekit.agents:initializing job runner
+INFO:livekit.agents:job runner initialized
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.plugins.google:connecting to Gemini Realtime API...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using video io: `RoomIO` > `AgentSession` > (none)
+DEBUG:livekit.agents:start reading stream
+INFO:google_genai.live:b'{\n  "setupComplete": {}\n}\n'
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.plugins.google:send task finished.
+DEBUG:livekit.agents:session closed
+WARNING:livekit:livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+DEBUG:livekit.agents:shutting down job task
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+DEBUG:livekit.agents:job exiting
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit.agents:shutting down worker
+INFO:livekit.agents:process exiting

@@ -24,7 +24,7 @@ class Assistant(Agent):
         super().__init__(
             instructions=AGENT_INSTRUCTION,
             # stt=deepgram.STT(model="nova-3", language="multi"),
-            llm=google.beta.realtime.RealtimeModel(voice="Aoede", temperature=0.0, ),
+            llm=google.beta.realtime.RealtimeModel(voice="Aoede", temperature=0.0),
             tools=[get_weather, search_web],
             # tts=cartesia.TTS(model="sonic-2", voice="f786b574-daa5-4673-aa0c-cbe3e8534c02"),
             vad=silero.VAD.load(),
@@ -69,7 +69,6 @@ async def entrypoint(ctx: agents.JobContext):
     # (Optional) startup greeting
     await session.generate_reply(
         instructions=SESSION_INSTRUCTION,
-        allow_interruptions=False,
     )
 
 
