@@ -37,6 +37,7 @@ class Assistant(Agent):
 async def entrypoint(ctx: agents.JobContext):
     session = AgentSession()
     session_mode = "mental"  # default startup mode
+    recommendations = []
 
     async def switch_session_mode(mode: str):
         """Switch between mental and physical session modes with smooth acknowledgment."""
@@ -93,6 +94,21 @@ async def entrypoint(ctx: agents.JobContext):
             elif isinstance(content, AudioContent):
                 print(f" - audio: {content.frame}, transcript: {content.transcript}")
 
+        if event.item.role == "assistant":
+            # log assistant replies to file as well
+            logging.info(
+                f"ASSISTANT({event.item.id}): {event.item.text_content} "
+                f"(interrupted={event.item.interrupted})"
+            )
+
+            # store assistant messages (recommendations, answers, etc.)
+            recommendations.append({
+                "id": event.item.id,
+                "text": event.item.text_content,
+                "interrupted": event.item.interrupted,
+                "created_at": event.item.created_at,
+            })
+
     # Handle incoming data (typed chat messages)
     def on_data_received_sync(data: rtc.DataPacket):
         asyncio.create_task(on_data_received_async(data))
@@ -140,6 +156,13 @@ async def entrypoint(ctx: agents.JobContext):
     await session.generate_reply(
         instructions=MENTAL_SESSION_INSTRUCTION
     )
+
+    @ctx.room.on("disconnected")
+    def on_room_disconnected():
+        """Write recommendations to file when the room disconnects."""
+        with open("recommendations.json", "w") as f:
+            json.dump(recommendations, f, indent=2)
+        logging.info("Session ended, recommendations written")
 
 
 logging.basicConfig(filename="./logs/app.log", level=logging.INFO)
